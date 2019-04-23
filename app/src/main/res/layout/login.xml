@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="241dp"
-        android:layout_height="164dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="201dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="102dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,14 +23,14 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="55dp"
         android:background="@drawable/edit_bg"
-        android:hint="   user/e-mail"
+        android:hint="   用户名/邮箱"
         android:maxLength="40"
-        android:textColorHint="#EE9A49"
+        android:textColorHint="#49663e"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,15 +42,14 @@
         android:layout_marginTop="350dp"
         android:layout_marginEnd="55dp"
         android:background="@drawable/edit_bg"
-        android:hint="   passworld"
+        android:hint="   用户密码"
         android:inputType="textPassword"
         android:maxLength="40"
-        android:textColorHint="#EE9A49"
+        android:textColorHint="#49663e"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/login"
@@ -59,7 +58,7 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="450dp"
         android:layout_marginEnd="55dp"
-        android:background="#EE9A49"
+        android:background="#49663e"
         android:onClick="loginonclick"
         android:text="Login"
         android:textColor="#ffffff"
@@ -69,41 +68,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/losepassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="510dp"
-        android:text="Missing password"
-        android:textColor="#EE9A49"
-        android:textSize="18dp"
+        android:layout_marginEnd="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="510dp"
-        android:text="|"
-        android:textColor="#EE9A49"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/registe"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:onClick="registeronclick"
+            android:text="用户注册"
+            android:textColor="#49663e"
+            android:textSize="18dp" />
 
-    <TextView
-        android:id="@+id/registe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="510dp"
-        android:onClick="registeronclick"
-        android:text="User registration"
-        android:textColor="#EE9A49"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="#49663e"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/losepassword"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="找回密码"
+            android:onClick="messpassdialog"
+            android:textColor="#49663e"
+            android:textSize="18dp" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
