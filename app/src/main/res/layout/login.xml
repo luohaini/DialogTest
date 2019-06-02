@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/edituser"
+        android:id="@+id/edit_account"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editpassword"
+        android:id="@+id/edit_password"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/btn_login"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/registe"
+            android:id="@+id/btn_register"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:onClick="registeronclick"
@@ -98,7 +98,7 @@
             android:textSize="18dp" />
 
         <TextView
-            android:id="@+id/losepassword"
+            android:id="@+id/text_msg"
             android:layout_width="145dp"
             android:layout_height="wrap_content"
             android:gravity="right"
