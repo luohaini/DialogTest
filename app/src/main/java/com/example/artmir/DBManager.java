@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class DBManager {
     private DBHelper dbHelper;
     private SQLiteDatabase db;
