@@ -27,19 +27,13 @@ public class MainActivity extends AppCompatActivity {
     private  EditText editpass;
     private TextView misspass;
     private TextView register;
-    private  String url="http://192.168.56.1:5000/demo";
+    private  String url="http://172.20.10.5:5000/demo";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        new Thread(){
-            @Override
-            public void run()
-            {
-                SendMessage(url,"111","222");
-            }
-        }.start();
+
 
     }
 
@@ -50,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void registeronclick(View view){
         Intent intent=new Intent(MainActivity.this,RegisterActivity.class);
+        new Thread(){
+            @Override
+            public void run()
+            {
+                SendMessage(url,"111","222");
+            }
+        }.start();
         startActivity(intent);
     }
     /*
